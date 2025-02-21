@@ -10,6 +10,7 @@ import SwiftUI
 struct DivisionView: View {
     
     // MARK: Stored Properties
+    // Holds the view model
     @State var dividend: Int = 1
     @State var divisor: Int = 1
     
