@@ -14,6 +14,7 @@
 		232A8D3A2D68EDA500154ECA /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D392D68ED9D00154ECA /* AdditionView.swift */; };
 		232A8D3C2D68EDFD00154ECA /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D3B2D68EDF500154ECA /* SubtractionView.swift */; };
 		232A8D3E2D68EE6B00154ECA /* MultiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D3D2D68EE6500154ECA /* MultiplicationView.swift */; };
+		232A8D402D68EEBD00154ECA /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D3F2D68EEB700154ECA /* DivisionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		232A8D392D68ED9D00154ECA /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
 		232A8D3B2D68EDF500154ECA /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
 		232A8D3D2D68EE6500154ECA /* MultiplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationView.swift; sourceTree = "<group>"; };
+		232A8D3F2D68EEB700154ECA /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +94,11 @@
 		232A8D352D68EBED00154ECA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				232A8D3D2D68EE6500154ECA /* MultiplicationView.swift */,
 				232A8D362D68ECDC00154ECA /* LandingView.swift */,
 				232A8D392D68ED9D00154ECA /* AdditionView.swift */,
 				232A8D3B2D68EDF500154ECA /* SubtractionView.swift */,
+				232A8D3D2D68EE6500154ECA /* MultiplicationView.swift */,
+				232A8D3F2D68EEB700154ECA /* DivisionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				232A8D372D68ECE200154ECA /* LandingView.swift in Sources */,
+				232A8D402D68EEBD00154ECA /* DivisionView.swift in Sources */,
 				232A8D3E2D68EE6B00154ECA /* MultiplicationView.swift in Sources */,
 				232A8D3C2D68EDFD00154ECA /* SubtractionView.swift in Sources */,
 				232A8D302D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift in Sources */,
