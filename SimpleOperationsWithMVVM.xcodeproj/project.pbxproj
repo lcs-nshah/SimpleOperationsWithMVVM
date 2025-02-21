@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		232A8D2F2D68EBA400154ECA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D2C2D68EBA400154ECA /* ContentView.swift */; };
+		232A8D302D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D2D2D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift */; };
+		232A8D312D68EBA400154ECA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232A8D292D68EBA400154ECA /* Preview Assets.xcassets */; };
+		232A8D322D68EBA400154ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232A8D2B2D68EBA400154ECA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		232A8D182D68EB8300154ECA /* SimpleOperationsWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOperationsWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		232A8D292D68EBA400154ECA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		232A8D2B2D68EBA400154ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		232A8D2C2D68EBA400154ECA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		232A8D2D2D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperationsWithMVVMApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		232A8D1A2D68EB8300154ECA /* SimpleOperationsWithMVVM */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SimpleOperationsWithMVVM;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		232A8D152D68EB8300154ECA /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		232A8D0F2D68EB8300154ECA = {
 			isa = PBXGroup;
 			children = (
-				232A8D1A2D68EB8300154ECA /* SimpleOperationsWithMVVM */,
+				232A8D2E2D68EBA400154ECA /* SimpleOperationsWithMVVM */,
 				232A8D192D68EB8300154ECA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,49 @@
 				232A8D182D68EB8300154ECA /* SimpleOperationsWithMVVM.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		232A8D2A2D68EBA400154ECA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				232A8D292D68EBA400154ECA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		232A8D2E2D68EBA400154ECA /* SimpleOperationsWithMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				232A8D2D2D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift */,
+				232A8D332D68EBA800154ECA /* Models */,
+				232A8D342D68EBDD00154ECA /* ViewModels */,
+				232A8D352D68EBED00154ECA /* Views */,
+				232A8D2A2D68EBA400154ECA /* Preview Content */,
+				232A8D2B2D68EBA400154ECA /* Assets.xcassets */,
+			);
+			path = SimpleOperationsWithMVVM;
+			sourceTree = "<group>";
+		};
+		232A8D332D68EBA800154ECA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		232A8D342D68EBDD00154ECA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		232A8D352D68EBED00154ECA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				232A8D2C2D68EBA400154ECA /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				232A8D1A2D68EB8300154ECA /* SimpleOperationsWithMVVM */,
 			);
 			name = SimpleOperationsWithMVVM;
 			packageProductDependencies = (
@@ -109,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232A8D312D68EBA400154ECA /* Preview Assets.xcassets in Resources */,
+				232A8D322D68EBA400154ECA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232A8D2F2D68EBA400154ECA /* ContentView.swift in Sources */,
+				232A8D302D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
