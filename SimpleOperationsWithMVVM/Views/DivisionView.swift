@@ -10,31 +10,18 @@ import SwiftUI
 struct DivisionView: View {
     
     // MARK: Stored Properties
-    // Holds the view model
-    @State var dividend: Int = 1
-    @State var divisor: Int = 1
+    @State var viewModel = DivisionViewModel()
     
     // MARK: Computed Properties
-    var quotient: Int? {
-        
-        // Check for division by zero
-        if divisor == 0 {
-            return nil
-        } else {
-            return dividend / divisor
-        }
-    }
-    
     var body: some View {
         VStack(alignment: .trailing) {
             Spacer()
             
+            // INPUT
             // First number
-            HStack {
-                Spacer()
-                Text("\(dividend)")
+                TextField("Dividend", text: $viewModel.providedDividend)
                     .font(.system(size: 75))
-            }
+                    .multilineTextAlignment(.trailing)
             
             Stepper(value: $dividend, label: {
                 Text("Dividend")
