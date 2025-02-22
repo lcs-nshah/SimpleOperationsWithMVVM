@@ -15,44 +15,47 @@ struct DivisionView: View {
     // MARK: Computed Properties
     var body: some View {
         VStack(alignment: .trailing) {
+            
             Spacer()
             
-            // INPUT
             // First number
-                TextField("Dividend", text: $viewModel.providedDividend)
-                    .font(.system(size: 75))
-                    .multilineTextAlignment(.trailing)
-            
-            Stepper(value: $dividend, label: {
-                Text("Dividend")
-                    .font(.system(size: 22.0, weight: .light, design: .default))
-            })
+            TextField("Dividend", text: $viewModel.providedDividend)
+                .font(.system(size: 75))
+                .multilineTextAlignment(.trailing)
             
             // Second number
             HStack {
                 Text("\(Image(systemName: "divide"))")
                     .font(.system(size: 50))
                 Spacer()
-                Text("\(divisor)")
+                TextField("Divisor", text: $viewModel.providedDivisor)
                     .font(.system(size: 75))
+                    .multilineTextAlignment(.trailing)
             }
-            
-            Stepper(value: $divisor, label: {
-                Text("Divisor")
-                    .font(.system(size: 22.0, weight: .light, design: .default))
-            })
             
             Rectangle()
                 .frame(height: 5)
             
             // Unwrap the optional to show answer
             // or show appropriate error message
-            if let unwrappedQuotient = quotient {
-                Text("\(unwrappedQuotient)")
+            if let divide = viewModel.division {
+                Text("\(divide.quotient)")
                     .font(.system(size: 75))
+                Text("R \(divide.remainder)")
+                    .font(.system(size: 75))
+                
+                Spacer()
+                
             } else {
-                Text("Cannot Divide by Zero")
-                    .font(.system(size: 40))
+                
+                // Show a message indicating that we are awaiting reasonable input
+                ContentUnavailableView(
+                    "Unable to evaluate power",
+                    systemImage: "gear.badge.questionmark",
+                    description: Text(viewModel.recoverySuggestion)
+                        .font(.system(size: 25))
+                )
+                .frame(height: 300)
             }
             
             Spacer()
