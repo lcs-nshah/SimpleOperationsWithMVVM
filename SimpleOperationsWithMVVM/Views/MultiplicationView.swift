@@ -10,50 +10,51 @@ import SwiftUI
 struct MultiplicationView: View {
     
     // MARK: Stored Properties
-    @State var multiplicand: Int = 1
-    @State var multiplier: Int = 1
+    @State var viewModel = MultiplicationViewModel()
     
     // MARK: Computed Properties
-    var product: Int {
-        return multiplicand * multiplier
-    }
-    
     var body: some View {
         VStack(alignment: .trailing) {
+            
             Spacer()
             
             // First number
-            HStack {
-                Spacer()
-                Text("\(multiplicand)")
-                    .font(.system(size: 75))
-            }
-            
-            Stepper(value: $multiplicand, label: {
-                Text("Multiplicand")
-                    .font(.system(size: 22.0, weight: .light, design: .default))
-            })
+            TextField("Multiplicand", text: $viewModel.providedMultiplicand)
+                .font(.system(size: 65))
+                .multilineTextAlignment(.trailing)
             
             // Second number
             HStack {
                 Text("\(Image(systemName: "multiply"))")
                     .font(.system(size: 50))
                 Spacer()
-                Text("\(multiplier)")
-                    .font(.system(size: 75))
+                TextField("Multiplier", text: $viewModel.providedMultiplier)
+                    .font(.system(size: 65))
+                    .multilineTextAlignment(.trailing)
             }
             
-            Stepper(value: $multiplier, label: {
-                Text("Multiplier")
-                    .font(.system(size: 22.0, weight: .light, design: .default))
-            })
-            
-            // Answer
             Rectangle()
                 .frame(height: 5)
             
-            Text("\(product)")
-                .font(.system(size: 75))
+            // Unwrap the optional to show answer
+            // or show appropriate error message
+            if let multiply = viewModel.multiplication {
+                Text("\(multiply.product)")
+                    .font(.system(size: 75))
+                Spacer()
+                Spacer()
+                
+            } else {
+                
+                // Show a message indicating that we are awaiting reasonable input
+                ContentUnavailableView(
+                    "Unable to evaluate power",
+                    systemImage: "gear.badge.questionmark",
+                    description: Text(viewModel.recoverySuggestion)
+                        .font(.system(size: 25))
+                )
+                .frame(height: 300)
+            }
             
             Spacer()
         }
