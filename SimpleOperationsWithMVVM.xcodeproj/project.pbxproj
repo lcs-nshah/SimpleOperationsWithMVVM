@@ -19,6 +19,7 @@
 		232A8D442D69073A00154ECA /* DivisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D432D69067900154ECA /* DivisionViewModel.swift */; };
 		232A8D462D6A2C8700154ECA /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D452D6A2C4900154ECA /* Multiplication.swift */; };
 		232A8D482D6A2DF000154ECA /* MultiplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D472D6A2DE200154ECA /* MultiplicationViewModel.swift */; };
+		232A8D4A2D6A330300154ECA /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D492D6A329500154ECA /* Subtraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		232A8D432D69067900154ECA /* DivisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionViewModel.swift; sourceTree = "<group>"; };
 		232A8D452D6A2C4900154ECA /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
 		232A8D472D6A2DE200154ECA /* MultiplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationViewModel.swift; sourceTree = "<group>"; };
+		232A8D492D6A329500154ECA /* Subtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		232A8D332D68EBA800154ECA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				232A8D492D6A329500154ECA /* Subtraction.swift */,
 				232A8D452D6A2C4900154ECA /* Multiplication.swift */,
 				232A8D412D68EF2900154ECA /* Division.swift */,
 			);
@@ -193,6 +196,7 @@
 				232A8D482D6A2DF000154ECA /* MultiplicationViewModel.swift in Sources */,
 				232A8D3E2D68EE6B00154ECA /* MultiplicationView.swift in Sources */,
 				232A8D442D69073A00154ECA /* DivisionViewModel.swift in Sources */,
+				232A8D4A2D6A330300154ECA /* Subtraction.swift in Sources */,
 				232A8D3C2D68EDFD00154ECA /* SubtractionView.swift in Sources */,
 				232A8D422D68EF3100154ECA /* Division.swift in Sources */,
 				232A8D462D6A2C8700154ECA /* Multiplication.swift in Sources */,
