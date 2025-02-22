@@ -20,7 +20,7 @@ struct DivisionView: View {
             
             // First number
             TextField("Dividend", text: $viewModel.providedDividend)
-                .font(.system(size: 75))
+                .font(.system(size: 58))
                 .multilineTextAlignment(.trailing)
             
             // Second number
@@ -29,7 +29,7 @@ struct DivisionView: View {
                     .font(.system(size: 50))
                 Spacer()
                 TextField("Divisor", text: $viewModel.providedDivisor)
-                    .font(.system(size: 75))
+                    .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
             }
             
@@ -42,7 +42,7 @@ struct DivisionView: View {
                 Text("\(divide.quotient)")
                     .font(.system(size: 75))
                 Text("R \(divide.remainder)")
-                    .font(.system(size: 75))
+                    .font(.system(size: 58))
                 
                 Spacer()
                 
@@ -55,7 +55,7 @@ struct DivisionView: View {
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))
                 )
-                .frame(height: 300)
+                .frame(height: 250)
             }
             
             Spacer()

@@ -20,7 +20,7 @@ struct MultiplicationView: View {
             
             // First number
             TextField("Multiplicand", text: $viewModel.providedMultiplicand)
-                .font(.system(size: 65))
+                .font(.system(size: 58))
                 .multilineTextAlignment(.trailing)
             
             // Second number
@@ -29,7 +29,7 @@ struct MultiplicationView: View {
                     .font(.system(size: 50))
                 Spacer()
                 TextField("Multiplier", text: $viewModel.providedMultiplier)
-                    .font(.system(size: 65))
+                    .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
             }
             
@@ -41,6 +41,7 @@ struct MultiplicationView: View {
             if let multiply = viewModel.multiplication {
                 Text("\(multiply.product)")
                     .font(.system(size: 75))
+               
                 Spacer()
                 Spacer()
                 
@@ -53,7 +54,7 @@ struct MultiplicationView: View {
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))
                 )
-                .frame(height: 300)
+                .frame(height: 250)
             }
             
             Spacer()

@@ -20,23 +20,22 @@ class MultiplicationViewModel {
         
         // Check that the string in providedMultiplicand can be converted into Int
         guard let multiplicand = Int(providedMultiplicand) else {
-    
-            recoverySuggestion = "Please enter an integer for the multiplicand."
+            recoverySuggestion = "Please enter an integer for the multiplicand"
             
             return nil
         }
         
-        // Check that the string in providedDivisor can be converted into Int
+        // Check that the string in providedMultiplier can be converted into Int
         guard let multiplier = Int(providedMultiplier) else {
-            recoverySuggestion = "Please enter an integer for the multiplier."
+            recoverySuggestion = "Please enter an integer for the multiplier"
             
             return nil
         }
         
         // Return an instance of the model
         recoverySuggestion = ""
+       
         return Multiplication(multiplicand: multiplicand, multiplier: multiplier)
-        
     }
     
     // MARK: Initializer
