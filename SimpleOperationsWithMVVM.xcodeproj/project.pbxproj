@@ -17,6 +17,7 @@
 		232A8D402D68EEBD00154ECA /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D3F2D68EEB700154ECA /* DivisionView.swift */; };
 		232A8D422D68EF3100154ECA /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D412D68EF2900154ECA /* Division.swift */; };
 		232A8D442D69073A00154ECA /* DivisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D432D69067900154ECA /* DivisionViewModel.swift */; };
+		232A8D462D6A2C8700154ECA /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D452D6A2C4900154ECA /* Multiplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		232A8D3F2D68EEB700154ECA /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		232A8D412D68EF2900154ECA /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		232A8D432D69067900154ECA /* DivisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionViewModel.swift; sourceTree = "<group>"; };
+		232A8D452D6A2C4900154ECA /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		232A8D332D68EBA800154ECA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				232A8D452D6A2C4900154ECA /* Multiplication.swift */,
 				232A8D412D68EF2900154ECA /* Division.swift */,
 			);
 			path = Models;
@@ -188,6 +191,7 @@
 				232A8D442D69073A00154ECA /* DivisionViewModel.swift in Sources */,
 				232A8D3C2D68EDFD00154ECA /* SubtractionView.swift in Sources */,
 				232A8D422D68EF3100154ECA /* Division.swift in Sources */,
+				232A8D462D6A2C8700154ECA /* Multiplication.swift in Sources */,
 				232A8D302D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift in Sources */,
 				232A8D3A2D68EDA500154ECA /* AdditionView.swift in Sources */,
 			);
