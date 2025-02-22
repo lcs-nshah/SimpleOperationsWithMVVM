@@ -10,50 +10,52 @@ import SwiftUI
 struct AdditionView: View {
     
     // MARK: Stored Properties
-    @State var firstAddend: Int = 1
-    @State var secondAddend: Int = 1
+    @State var viewModel = AdditionViewModel()
     
     // MARK: Computed Properties
-    var sum: Int {
-        return firstAddend + secondAddend
-    }
-    
     var body: some View {
         VStack (alignment: .trailing) {
+           
             Spacer()
             
             // First number
-            HStack {
-                Spacer()
-                Text("\(firstAddend)")
-                    .font(.system(size: 75))
-            }
-            
-            Stepper(value: $firstAddend, label: {
-                Text("First Addend")
-                    .font(.system(size: 22.0, weight: .light, design: .default))
-            })
+            TextField("Addend", text: $viewModel.providedFirstAddend)
+                .font(.system(size: 58))
+                .multilineTextAlignment(.trailing)
             
             // Second number
             HStack {
                 Text("\(Image(systemName: "plus"))")
                     .font(.system(size: 50))
                 Spacer()
-                Text("\(secondAddend)")
-                    .font(.system(size: 75))
+                TextField("Addend", text: $viewModel.providedSecondAddend)
+                    .font(.system(size: 58))
+                    .multilineTextAlignment(.trailing)
             }
-            
-            Stepper(value: $secondAddend, label: {
-                Text("Second Addend")
-                    .font(.system(size: 22.0, weight: .light, design: .default))
-            })
-            
-            // Answer
+
             Rectangle()
                 .frame(height: 5)
-            
-            Text("\(sum)")
-                .font(.system(size: 75))
+         
+            // Unwrap the optional to show answer
+            // or show appropriate error message
+            if let add = viewModel.addition {
+                Text("\(add.sum)")
+                    .font(.system(size: 75))
+               
+                Spacer()
+                Spacer()
+                
+            } else {
+                
+                // Show a message indicating that we are awaiting reasonable input
+                ContentUnavailableView(
+                    "Unable to evaluate power",
+                    systemImage: "gear.badge.questionmark",
+                    description: Text(viewModel.recoverySuggestion)
+                        .font(.system(size: 25))
+                )
+                .frame(height: 250)
+            }
             
             Spacer()
         }

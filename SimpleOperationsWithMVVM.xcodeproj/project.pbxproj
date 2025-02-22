@@ -22,6 +22,7 @@
 		232A8D4A2D6A330300154ECA /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D492D6A329500154ECA /* Subtraction.swift */; };
 		232A8D4C2D6A347500154ECA /* SubtractionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4B2D6A346D00154ECA /* SubtractionViewModel.swift */; };
 		232A8D4E2D6A390600154ECA /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4D2D6A38E900154ECA /* Addition.swift */; };
+		232A8D502D6A397B00154ECA /* AdditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		232A8D492D6A329500154ECA /* Subtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
 		232A8D4B2D6A346D00154ECA /* SubtractionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewModel.swift; sourceTree = "<group>"; };
 		232A8D4D2D6A38E900154ECA /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
+		232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		232A8D342D68EBDD00154ECA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */,
 				232A8D4B2D6A346D00154ECA /* SubtractionViewModel.swift */,
 				232A8D472D6A2DE200154ECA /* MultiplicationViewModel.swift */,
 				232A8D432D69067900154ECA /* DivisionViewModel.swift */,
@@ -203,6 +206,7 @@
 				232A8D482D6A2DF000154ECA /* MultiplicationViewModel.swift in Sources */,
 				232A8D3E2D68EE6B00154ECA /* MultiplicationView.swift in Sources */,
 				232A8D442D69073A00154ECA /* DivisionViewModel.swift in Sources */,
+				232A8D502D6A397B00154ECA /* AdditionViewModel.swift in Sources */,
 				232A8D4A2D6A330300154ECA /* Subtraction.swift in Sources */,
 				232A8D3C2D68EDFD00154ECA /* SubtractionView.swift in Sources */,
 				232A8D4C2D6A347500154ECA /* SubtractionViewModel.swift in Sources */,
