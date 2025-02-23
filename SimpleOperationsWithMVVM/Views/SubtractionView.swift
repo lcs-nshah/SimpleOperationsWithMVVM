@@ -14,7 +14,7 @@ struct SubtractionView: View {
     
     // MARK: Computed Properties
     var body: some View {
-        VStack(alignment: .trailing) {
+        VStack (alignment: .trailing) {
             
             Text("Subtraction")
                 .font(.system(.largeTitle , design: .default, weight: .semibold))
@@ -28,9 +28,12 @@ struct SubtractionView: View {
             
             // Second number
             HStack {
+                
                 Text("\(Image(systemName: "minus"))")
                     .font(.system(size: 50))
+                
                 Spacer()
+                
                 TextField("Subtrahend", text: $viewModel.providedSubtrahend)
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
@@ -46,10 +49,9 @@ struct SubtractionView: View {
                     .font(.system(size: 70))
                 
                 Spacer()
+                
                 Spacer()
-                
             } else {
-                
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
                     "Unable to evaluate difference",

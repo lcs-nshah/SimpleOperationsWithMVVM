@@ -14,7 +14,7 @@ struct MultiplicationView: View {
     
     // MARK: Computed Properties
     var body: some View {
-        VStack(alignment: .trailing) {
+        VStack (alignment: .trailing) {
             
             Text("Multiplication")
                 .font(.system(.largeTitle , design: .default, weight: .semibold))
@@ -28,9 +28,12 @@ struct MultiplicationView: View {
             
             // Second number
             HStack {
+               
                 Text("\(Image(systemName: "multiply"))")
                     .font(.system(size: 50))
+               
                 Spacer()
+                
                 TextField("Multiplier", text: $viewModel.providedMultiplier)
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
@@ -46,10 +49,9 @@ struct MultiplicationView: View {
                     .font(.system(size: 70))
                 
                 Spacer()
+                
                 Spacer()
-                
             } else {
-                
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
                     "Unable to evaluate product",

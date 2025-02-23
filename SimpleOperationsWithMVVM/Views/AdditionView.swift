@@ -28,9 +28,12 @@ struct AdditionView: View {
             
             // Second number
             HStack {
+                
                 Text("\(Image(systemName: "plus"))")
                     .font(.system(size: 50))
+                
                 Spacer()
+                
                 TextField("Addend", text: $viewModel.providedSecondAddend)
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
@@ -46,10 +49,9 @@ struct AdditionView: View {
                     .font(.system(size: 70))
                 
                 Spacer()
+                
                 Spacer()
-                
             } else {
-                
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
                     "Unable to evaluate sum",

@@ -14,7 +14,7 @@ struct DivisionView: View {
     
     // MARK: Computed Properties
     var body: some View {
-        VStack(alignment: .trailing) {
+        VStack (alignment: .trailing) {
             
             Text("Division")
                 .font(.system(.largeTitle , design: .default, weight: .semibold))
@@ -28,9 +28,12 @@ struct DivisionView: View {
             
             // Second number
             HStack {
+                
                 Text("\(Image(systemName: "divide"))")
                     .font(.system(size: 50))
+               
                 Spacer()
+               
                 TextField("Divisor", text: $viewModel.providedDivisor)
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
@@ -44,13 +47,12 @@ struct DivisionView: View {
             if let divide = viewModel.division {
                 Text("\(divide.quotient)")
                     .font(.system(size: 70))
+                
                 Text("R \(divide.remainder)")
                     .font(.system(size: 70))
                 
                 Spacer()
-                
             } else {
-                
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
                     "Unable to evaluate quotient",
