@@ -35,16 +35,17 @@ struct AdditionView: View {
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
             }
-
+            
             Rectangle()
                 .frame(height: 5)
-         
+            
             // Unwrap the optional to show answer
             // or show appropriate error message
             if let add = viewModel.addition {
                 Text("\(add.sum.formatted())")
                     .font(.system(size: 70))
                 
+                Spacer()
                 Spacer()
                 
             } else {
@@ -56,12 +57,12 @@ struct AdditionView: View {
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))
                 )
-                .frame(height: 250)
+                .frame(height: 274)
             }
             
             Spacer()
         }
-        .padding(25)
+        .padding(19)
     }
 }
 

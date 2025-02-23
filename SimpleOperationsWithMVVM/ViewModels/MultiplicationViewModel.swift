@@ -34,7 +34,7 @@ class MultiplicationViewModel {
         
         // Return an instance of the model
         recoverySuggestion = ""
-       
+        
         return Multiplication(multiplicand: multiplicand, multiplier: multiplier)
     }
     

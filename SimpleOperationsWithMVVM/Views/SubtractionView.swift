@@ -38,13 +38,14 @@ struct SubtractionView: View {
             
             Rectangle()
                 .frame(height: 5)
-           
+            
             // Unwrap the optional to show answer
             // or show appropriate error message
             if let subtract = viewModel.subtraction {
                 Text("\(subtract.difference.formatted())")
                     .font(.system(size: 70))
-               
+                
+                Spacer()
                 Spacer()
                 
             } else {
@@ -56,7 +57,7 @@ struct SubtractionView: View {
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))
                 )
-                .frame(height: 250)
+                .frame(height: 274)
             }
             
             Spacer()

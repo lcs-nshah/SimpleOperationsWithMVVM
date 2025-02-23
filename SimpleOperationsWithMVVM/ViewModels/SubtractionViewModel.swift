@@ -34,7 +34,7 @@ class SubtractionViewModel {
         
         // Return an instance of the model
         recoverySuggestion = ""
-       
+        
         return Subtraction(minuend: minuend, subtrahend: subtrahend)
     }
     

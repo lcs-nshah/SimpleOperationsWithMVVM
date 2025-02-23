@@ -45,7 +45,7 @@ struct DivisionView: View {
                 Text("\(divide.quotient)")
                     .font(.system(size: 70))
                 Text("R \(divide.remainder)")
-                    .font(.system(size: 58))
+                    .font(.system(size: 70))
                 
                 Spacer()
                 
@@ -58,12 +58,12 @@ struct DivisionView: View {
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))
                 )
-                .frame(height: 250)
+                .frame(height: 274)
             }
             
             Spacer()
         }
-        .padding(25)
+        .padding(19)
     }
 }
 

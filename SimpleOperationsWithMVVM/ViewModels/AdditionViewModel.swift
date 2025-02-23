@@ -34,7 +34,7 @@ class AdditionViewModel {
         
         // Return an instance of the model
         recoverySuggestion = ""
-       
+        
         return Addition(firstAddend: firstAddend, secondAddend: secondAddend)
     }
     
