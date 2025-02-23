@@ -16,6 +16,9 @@ struct DivisionView: View {
     var body: some View {
         VStack(alignment: .trailing) {
             
+            Text("Division")
+                .font(.system(.largeTitle , design: .default, weight: .semibold))
+            
             Spacer()
             
             // First number
@@ -40,7 +43,7 @@ struct DivisionView: View {
             // or show appropriate error message
             if let divide = viewModel.division {
                 Text("\(divide.quotient)")
-                    .font(.system(size: 75))
+                    .font(.system(size: 70))
                 Text("R \(divide.remainder)")
                     .font(.system(size: 58))
                 
@@ -50,7 +53,7 @@ struct DivisionView: View {
                 
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
-                    "Unable to evaluate power",
+                    "Unable to evaluate quotient",
                     systemImage: "gear.badge.questionmark",
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))

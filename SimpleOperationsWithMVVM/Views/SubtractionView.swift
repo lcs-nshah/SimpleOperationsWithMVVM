@@ -16,6 +16,9 @@ struct SubtractionView: View {
     var body: some View {
         VStack(alignment: .trailing) {
             
+            Text("Subtraction")
+                .font(.system(.largeTitle , design: .default, weight: .semibold))
+            
             Spacer()
             
             // First number
@@ -39,17 +42,16 @@ struct SubtractionView: View {
             // Unwrap the optional to show answer
             // or show appropriate error message
             if let subtract = viewModel.subtraction {
-                Text("\(subtract.difference)")
-                    .font(.system(size: 75))
+                Text("\(subtract.difference.formatted())")
+                    .font(.system(size: 70))
                
-                Spacer()
                 Spacer()
                 
             } else {
                 
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
-                    "Unable to evaluate power",
+                    "Unable to evaluate difference",
                     systemImage: "gear.badge.questionmark",
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))
@@ -59,7 +61,7 @@ struct SubtractionView: View {
             
             Spacer()
         }
-        .padding(25)
+        .padding(19)
     }
 }
 

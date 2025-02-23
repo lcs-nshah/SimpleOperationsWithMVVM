@@ -18,16 +18,16 @@ class MultiplicationViewModel {
     // MARK: Computed Properties
     var multiplication: Multiplication? {
         
-        // Check that the string in providedMultiplicand can be converted into Int
-        guard let multiplicand = Int(providedMultiplicand) else {
-            recoverySuggestion = "Please enter an integer for the multiplicand"
+        // Check that the string in providedMultiplicand can be converted into Double
+        guard let multiplicand = Double(providedMultiplicand) else {
+            recoverySuggestion = "Please enter a numerical value for the multiplicand"
             
             return nil
         }
         
-        // Check that the string in providedMultiplier can be converted into Int
-        guard let multiplier = Int(providedMultiplier) else {
-            recoverySuggestion = "Please enter an integer for the multiplier"
+        // Check that the string in providedMultiplier can be converted into Double
+        guard let multiplier = Double(providedMultiplier) else {
+            recoverySuggestion = "Please enter a numerical value for the multiplier"
             
             return nil
         }

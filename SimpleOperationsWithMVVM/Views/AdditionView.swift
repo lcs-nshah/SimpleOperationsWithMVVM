@@ -15,7 +15,10 @@ struct AdditionView: View {
     // MARK: Computed Properties
     var body: some View {
         VStack (alignment: .trailing) {
-           
+            
+            Text("Addition")
+                .font(.system(.largeTitle , design: .default, weight: .semibold))
+            
             Spacer()
             
             // First number
@@ -39,17 +42,16 @@ struct AdditionView: View {
             // Unwrap the optional to show answer
             // or show appropriate error message
             if let add = viewModel.addition {
-                Text("\(add.sum)")
-                    .font(.system(size: 75))
-               
-                Spacer()
+                Text("\(add.sum.formatted())")
+                    .font(.system(size: 70))
+                
                 Spacer()
                 
             } else {
                 
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
-                    "Unable to evaluate power",
+                    "Unable to evaluate sum",
                     systemImage: "gear.badge.questionmark",
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))

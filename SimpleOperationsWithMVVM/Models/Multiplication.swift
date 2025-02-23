@@ -10,11 +10,11 @@ import Foundation
 struct Multiplication {
     
     // MARK: Stored Properties
-    var multiplicand: Int
-    var multiplier: Int
+    var multiplicand: Double
+    var multiplier: Double
     
     // MARK: Computed Properties
-    var product: Int {
+    var product: Double {
         return multiplicand * multiplier
     }
 }

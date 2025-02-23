@@ -16,6 +16,9 @@ struct MultiplicationView: View {
     var body: some View {
         VStack(alignment: .trailing) {
             
+            Text("Multiplication")
+                .font(.system(.largeTitle , design: .default, weight: .semibold))
+            
             Spacer()
             
             // First number
@@ -39,8 +42,8 @@ struct MultiplicationView: View {
             // Unwrap the optional to show answer
             // or show appropriate error message
             if let multiply = viewModel.multiplication {
-                Text("\(multiply.product)")
-                    .font(.system(size: 75))
+                Text("\(multiply.product.formatted())")
+                    .font(.system(size: 70))
                
                 Spacer()
                 Spacer()
@@ -49,7 +52,7 @@ struct MultiplicationView: View {
                 
                 // Show a message indicating that we are awaiting reasonable input
                 ContentUnavailableView(
-                    "Unable to evaluate power",
+                    "Unable to evaluate product",
                     systemImage: "gear.badge.questionmark",
                     description: Text(viewModel.recoverySuggestion)
                         .font(.system(size: 25))

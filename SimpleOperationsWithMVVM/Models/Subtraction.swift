@@ -10,11 +10,11 @@ import Foundation
 struct Subtraction {
     
     // MARK: Stored Properties
-    var minuend: Int
-    var subtrahend: Int
+    var minuend: Double
+    var subtrahend: Double
     
     // MARK: Computed Properties
-    var difference: Int {
+    var difference: Double {
         return minuend - subtrahend
     }
 }

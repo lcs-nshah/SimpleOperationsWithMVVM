@@ -10,11 +10,11 @@ import Foundation
 struct Addition {
     
     // MARK: Stored Properties
-    var firstAddend: Int
-    var secondAddend: Int
+    var firstAddend: Double
+    var secondAddend: Double
     
     // MARK: Computed Properties
-    var sum: Int {
+    var sum: Double {
         return firstAddend + secondAddend
     }
 }
