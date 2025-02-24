@@ -74,6 +74,7 @@ struct AdditionView: View {
                         
                         // History
                         HStack {
+                            
                             Text("History")
                                 .font(.system(size: 20, weight: .bold))
                             

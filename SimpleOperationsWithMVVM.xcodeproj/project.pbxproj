@@ -26,6 +26,7 @@
 		232F0BE42D6C1111005A543A /* AdditionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE32D6C10FB005A543A /* AdditionItemView.swift */; };
 		232F0BE62D6C271A005A543A /* SubtractionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE52D6C270D005A543A /* SubtractionItemView.swift */; };
 		232F0BE92D6C3933005A543A /* MultiplicationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE82D6C3928005A543A /* MultiplicationItemView.swift */; };
+		232F0BED2D6C3AA5005A543A /* DivisionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BEC2D6C3A98005A543A /* DivisionItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		232F0BE32D6C10FB005A543A /* AdditionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionItemView.swift; sourceTree = "<group>"; };
 		232F0BE52D6C270D005A543A /* SubtractionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionItemView.swift; sourceTree = "<group>"; };
 		232F0BE82D6C3928005A543A /* MultiplicationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationItemView.swift; sourceTree = "<group>"; };
+		232F0BEC2D6C3A98005A543A /* DivisionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				232F0BE32D6C10FB005A543A /* AdditionItemView.swift */,
 				232F0BE52D6C270D005A543A /* SubtractionItemView.swift */,
 				232F0BE82D6C3928005A543A /* MultiplicationItemView.swift */,
+				232F0BEC2D6C3A98005A543A /* DivisionItemView.swift */,
 			);
 			path = ItemViews;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232F0BED2D6C3AA5005A543A /* DivisionItemView.swift in Sources */,
 				232A8D372D68ECE200154ECA /* LandingView.swift in Sources */,
 				232A8D402D68EEBD00154ECA /* DivisionView.swift in Sources */,
 				232A8D4E2D6A390600154ECA /* Addition.swift in Sources */,

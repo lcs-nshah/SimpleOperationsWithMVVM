@@ -74,6 +74,7 @@ struct MultiplicationView: View {
                         
                         // History
                         HStack {
+                            
                             Text("History")
                                 .font(.system(size: 20, weight: .bold))
                             
@@ -97,8 +98,6 @@ struct MultiplicationView: View {
                     )
                     .frame(height: 350)
                 }
-                
-                Spacer()
             }
             .padding(25)
             .navigationTitle("Multiplication")

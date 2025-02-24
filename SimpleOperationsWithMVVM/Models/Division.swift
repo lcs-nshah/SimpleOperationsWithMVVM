@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Division {
+struct Division: Identifiable {
     
     // MARK: Stored Properties
+    let id = UUID()
     var dividend: Int
     var divisor: Int
     

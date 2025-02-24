@@ -11,6 +11,7 @@ import Foundation
 class DivisionViewModel {
     
     // MARK: Stored Properties
+    var resultHistory: [Division] = []
     var providedDividend: String
     var providedDivisor: String
     var recoverySuggestion: String = ""
@@ -54,5 +55,17 @@ class DivisionViewModel {
         self.providedDividend = providedDividend
         self.providedDivisor = providedDivisor
         self.recoverySuggestion = recoverySuggestion
+    }
+    
+    // MARK: Function(s)
+    func saveResult() {
+        if let division = self.division {
+            
+            self.resultHistory.insert(division, at: 0)
+        }
+    }
+    
+    func clearResult() {
+        self.resultHistory.removeAll()
     }
 }

@@ -74,6 +74,7 @@ struct SubtractionView: View {
                         
                         // History
                         HStack {
+                            
                             Text("History")
                                 .font(.system(size: 20, weight: .bold))
                             
