@@ -23,6 +23,7 @@
 		232A8D4C2D6A347500154ECA /* SubtractionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4B2D6A346D00154ECA /* SubtractionViewModel.swift */; };
 		232A8D4E2D6A390600154ECA /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4D2D6A38E900154ECA /* Addition.swift */; };
 		232A8D502D6A397B00154ECA /* AdditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */; };
+		232F0BE42D6C1111005A543A /* AdditionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE32D6C10FB005A543A /* AdditionItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		232A8D4B2D6A346D00154ECA /* SubtractionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionViewModel.swift; sourceTree = "<group>"; };
 		232A8D4D2D6A38E900154ECA /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 		232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewModel.swift; sourceTree = "<group>"; };
+		232F0BE32D6C10FB005A543A /* AdditionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				232A8D362D68ECDC00154ECA /* LandingView.swift */,
 				232A8D392D68ED9D00154ECA /* AdditionView.swift */,
+				232F0BE32D6C10FB005A543A /* AdditionItemView.swift */,
 				232A8D3B2D68EDF500154ECA /* SubtractionView.swift */,
 				232A8D3D2D68EE6500154ECA /* MultiplicationView.swift */,
 				232A8D3F2D68EEB700154ECA /* DivisionView.swift */,
@@ -204,6 +207,7 @@
 				232A8D402D68EEBD00154ECA /* DivisionView.swift in Sources */,
 				232A8D4E2D6A390600154ECA /* Addition.swift in Sources */,
 				232A8D482D6A2DF000154ECA /* MultiplicationViewModel.swift in Sources */,
+				232F0BE42D6C1111005A543A /* AdditionItemView.swift in Sources */,
 				232A8D3E2D68EE6B00154ECA /* MultiplicationView.swift in Sources */,
 				232A8D442D69073A00154ECA /* DivisionViewModel.swift in Sources */,
 				232A8D502D6A397B00154ECA /* AdditionViewModel.swift in Sources */,

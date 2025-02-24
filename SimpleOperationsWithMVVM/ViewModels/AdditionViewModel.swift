@@ -11,6 +11,7 @@ import Foundation
 class AdditionViewModel {
     
     // MARK: Stored Properties
+    var resultHistory: [Addition] = []
     var providedFirstAddend: String
     var providedSecondAddend: String
     var recoverySuggestion: String = ""
@@ -47,5 +48,17 @@ class AdditionViewModel {
         self.providedFirstAddend = providedFirstAddend
         self.providedSecondAddend = providedSecondAddend
         self.recoverySuggestion = recoverySuggestion
+    }
+    
+    // MARK: Function(s)
+    func saveResult() {
+        if let addition = self.addition {
+            
+            self.resultHistory.insert(addition, at: 0)
+        }
+    }
+    
+    func clearResult() {
+        self.resultHistory.removeAll()
     }
 }
