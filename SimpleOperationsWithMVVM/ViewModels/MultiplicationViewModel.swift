@@ -11,6 +11,7 @@ import Foundation
 class MultiplicationViewModel {
     
     // MARK: Stored Properties
+    var resultHistory: [Multiplication] = []
     var providedMultiplicand: String
     var providedMultiplier: String
     var recoverySuggestion: String = ""
@@ -47,5 +48,17 @@ class MultiplicationViewModel {
         self.providedMultiplicand = providedMultiplicand
         self.providedMultiplier = providedMultiplier
         self.recoverySuggestion = recoverySuggestion
+    }
+    
+    // MARK: Function(s)
+    func saveResult() {
+        if let multiplication = self.multiplication {
+            
+            self.resultHistory.insert(multiplication, at: 0)
+        }
+    }
+    
+    func clearResult() {
+        self.resultHistory.removeAll()
     }
 }

@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Multiplication {
+struct Multiplication: Identifiable {
     
     // MARK: Stored Properties
+    let id = UUID()
     var multiplicand: Double
     var multiplier: Double
     

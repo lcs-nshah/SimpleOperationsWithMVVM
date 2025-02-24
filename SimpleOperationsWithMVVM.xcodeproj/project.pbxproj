@@ -25,6 +25,7 @@
 		232A8D502D6A397B00154ECA /* AdditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */; };
 		232F0BE42D6C1111005A543A /* AdditionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE32D6C10FB005A543A /* AdditionItemView.swift */; };
 		232F0BE62D6C271A005A543A /* SubtractionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE52D6C270D005A543A /* SubtractionItemView.swift */; };
+		232F0BE92D6C3933005A543A /* MultiplicationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0BE82D6C3928005A543A /* MultiplicationItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		232A8D4F2D6A397200154ECA /* AdditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewModel.swift; sourceTree = "<group>"; };
 		232F0BE32D6C10FB005A543A /* AdditionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionItemView.swift; sourceTree = "<group>"; };
 		232F0BE52D6C270D005A543A /* SubtractionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionItemView.swift; sourceTree = "<group>"; };
+		232F0BE82D6C3928005A543A /* MultiplicationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				232F0BE32D6C10FB005A543A /* AdditionItemView.swift */,
 				232F0BE52D6C270D005A543A /* SubtractionItemView.swift */,
+				232F0BE82D6C3928005A543A /* MultiplicationItemView.swift */,
 			);
 			path = ItemViews;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				232F0BE62D6C271A005A543A /* SubtractionItemView.swift in Sources */,
 				232A8D462D6A2C8700154ECA /* Multiplication.swift in Sources */,
 				232A8D302D68EBA400154ECA /* SimpleOperationsWithMVVMApp.swift in Sources */,
+				232F0BE92D6C3933005A543A /* MultiplicationItemView.swift in Sources */,
 				232A8D3A2D68EDA500154ECA /* AdditionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
