@@ -11,6 +11,7 @@ import Foundation
 class SubtractionViewModel {
     
     // MARK: Stored Properties
+    var resultHistory: [Subtraction] = []
     var providedMinuend: String
     var providedSubtrahend: String
     var recoverySuggestion: String = ""
@@ -47,5 +48,17 @@ class SubtractionViewModel {
         self.providedMinuend = providedMinuend
         self.providedSubtrahend = providedSubtrahend
         self.recoverySuggestion = recoverySuggestion
+    }
+    
+    // MARK: Function(s)
+    func saveResult() {
+        if let subtraction = self.subtraction {
+            
+            self.resultHistory.insert(subtraction, at: 0)
+        }
+    }
+    
+    func clearResult() {
+        self.resultHistory.removeAll()
     }
 }

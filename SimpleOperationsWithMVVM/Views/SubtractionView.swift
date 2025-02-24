@@ -17,14 +17,13 @@ struct SubtractionView: View {
         NavigationStack {
             VStack (alignment: .trailing) {
                 
-                Spacer()
-                
+                // MARK: INPUT
                 // First number
                 TextField("Minuend", text: $viewModel.providedMinuend)
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
                 
-                // Second number
+                // Operation and second number
                 HStack {
                     
                     Text("\(Image(systemName: "minus"))")
@@ -40,15 +39,54 @@ struct SubtractionView: View {
                 Rectangle()
                     .frame(height: 5)
                 
-                // Unwrap the optional to show answer
-                // or show appropriate error message
+                // MARK: OUTPUT
+                // Unwrap the optional to show answer or show appropriate error message
                 if let subtract = viewModel.subtraction {
-                    Text("\(subtract.difference.formatted())")
-                        .font(.system(size: 70))
-                    
-                    Spacer()
-                    
-                    Spacer()
+                    VStack {
+                        HStack {
+                            
+                            // Save button
+                            Button {
+                                viewModel.saveResult()
+                            } label: {
+                                Text("Save")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .padding(.vertical)
+                            
+                            // Clear button
+                            Button (role: .destructive) {
+                                viewModel.clearResult()
+                            } label: {
+                                Text("Clear")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .padding(.vertical)
+                            
+                            Spacer()
+                            
+                            // Answer
+                            Text("\(subtract.difference.formatted())")
+                                .font(.system(size: 70))
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.1)
+                        }
+                        
+                        // History
+                        HStack {
+                            Text("History")
+                                .font(.system(size: 20, weight: .bold))
+                            
+                            Spacer()
+                        }
+                        
+                        // List results
+                        List(viewModel.resultHistory) { priorResult in
+                            SubtractionItemView(subtraction: priorResult)
+                        }
+                        .listStyle(.plain)
+                    }
+                    .frame(height: 350)
                 } else {
                     // Show a message indicating that we are awaiting reasonable input
                     ContentUnavailableView(
@@ -57,12 +95,10 @@ struct SubtractionView: View {
                         description: Text(viewModel.recoverySuggestion)
                             .font(.system(size: 25))
                     )
-                    .frame(height: 274)
+                    .frame(height: 350)
                 }
-                
-                Spacer()
             }
-            .padding(19)
+            .padding(25)
             .navigationTitle("Subtraction")
         }
     }

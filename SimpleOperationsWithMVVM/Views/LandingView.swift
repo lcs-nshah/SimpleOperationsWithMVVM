@@ -17,6 +17,7 @@ struct LandingView: View {
                     Text("Addition")
                 }
                 .tag(1)
+                .tint(.none)
             
             SubtractionView()
                 .tabItem {
@@ -24,6 +25,7 @@ struct LandingView: View {
                     Text("Subtraction")
                 }
                 .tag(2)
+                .tint(.none)
             
             MultiplicationView()
                 .tabItem {
@@ -31,6 +33,7 @@ struct LandingView: View {
                     Text("Multiplication")
                 }
                 .tag(3)
+                .tint(.none)
             
             DivisionView()
                 .tabItem {
@@ -38,6 +41,7 @@ struct LandingView: View {
                     Text("Division")
                 }
                 .tag(4)
+                .tint(.none)
         }
         .tint(.orange)
     }

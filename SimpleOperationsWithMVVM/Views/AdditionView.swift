@@ -17,15 +17,13 @@ struct AdditionView: View {
         NavigationStack {
             VStack (alignment: .trailing) {
                 
-                Spacer()
-                
                 // MARK: INPUT
                 // First number
                 TextField("Addend", text: $viewModel.providedFirstAddend)
                     .font(.system(size: 58))
                     .multilineTextAlignment(.trailing)
                 
-                // Second number
+                // Operation and second number
                 HStack {
                     
                     Text("\(Image(systemName: "plus"))")
@@ -57,13 +55,15 @@ struct AdditionView: View {
                             .padding(.vertical)
                             
                             // Clear button
-                            Button {
+                            Button (role: .destructive) {
                                 viewModel.clearResult()
                             } label: {
-                                Text("clear")
+                                Text("Clear")
                             }
                             .buttonStyle(.borderedProminent)
                             .padding(.vertical)
+                            
+                            Spacer()
                             
                             // Answer
                             Text("\(add.sum.formatted())")
@@ -75,16 +75,16 @@ struct AdditionView: View {
                         // History
                         HStack {
                             Text("History")
-                                .bold()
+                                .font(.system(size: 20, weight: .bold))
+                            
                             Spacer()
                         }
                         
-                        // Iterate over the history of results
+                        // List results
                         List(viewModel.resultHistory) { priorResult in
                             AdditionItemView(addition: priorResult)
                         }
                         .listStyle(.plain)
-                        
                     }
                     .frame(height: 350)
                 } else {
@@ -98,7 +98,7 @@ struct AdditionView: View {
                     .frame(height: 350)
                 }
             }
-            .padding(19)
+            .padding(25)
             .navigationTitle("Addition")
         }
     }

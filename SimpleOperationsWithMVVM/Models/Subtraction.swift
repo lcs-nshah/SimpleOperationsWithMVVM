@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Subtraction {
+struct Subtraction: Identifiable {
     
     // MARK: Stored Properties
+    let id = UUID()
     var minuend: Double
     var subtrahend: Double
     
